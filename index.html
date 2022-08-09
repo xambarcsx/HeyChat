@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueHey: '#152743',
+              greyInput: '#F3F3F3',
+              greyText: '#B4B4B4',
+              greyChat: '#F1F1F1',
+
+            }
+          }
+        }
+      }
+    </script>
+    <title>HeyChat!</title>
+</head>
+<body>
+    <div class="flex">
+        <div class="w-20 h-screen bg-blueHey flex flex-col items-center justify-between">
+            <div class="m-4">
+                <img src="./Icon.png" alt="HeyChat">
+            </div>
+            <div class="flex flex-col">
+                <img class="py-3" src="./question_answer_white_24dp.svg" alt="">
+                <img class="py-3" src="./history_white_24dp.svg" alt="">
+            </div>
+          <img class="py-6" src="./settings_white_24dp.svg" alt="">
+        </div>
+        <div class="w-80 h-screen bg-white">
+          <div class="text-xl p-5 mt-3 font-semibold">
+            Bandeja de entrada
+          </div>
+          <hr>
+          <div class="pl-5 pt-6 flex">
+            <div class="p-2 w-2/12 flex justify-center items-center bg-greyInput focus:outline-none">
+            <img src="./search_white_24dp.svg" />
+          </div>
+            <input class="bg-greyInput w-9/12" type="text" placeholder="Buscar en mensajes">
+          </div>
+          <div class="flex">
+            <div class="">
+                <ul role="list" class="p-6 divide-y divide-slate-200">                   
+                      <li class="flex py-4 first:pt-0 last:pb-0">
+                        <img class="h-10 w-10 rounded-full" src="./firstp.jpeg" alt="" />
+                        <div class="ml-3 overflow-hidden">
+                            <div class="flex justify-between">
+                                <p class="text-base font-medium text-slate-900">+34 655 964 669</p>
+                                 <p class="text-xs font-light greyText">10:40 AM</p>
+                            </div>
+                          <p class="text-sm text-slate-500 truncate">Hola, buenos días necesito ayuda.</p>
+                        </div>
+                      </li>
+                </ul>
+                <hr>
+                <ul role="list" class="p-6 divide-y divide-slate-200">                   
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                      <img class="h-10 w-10 rounded-full" src="./second.jpeg" alt="" />
+                      <div class="ml-3 overflow-hidden">
+                          <div class="flex justify-between">
+                              <p class="text-base font-medium text-slate-900 space-btw">+34 648 908 972</p>
+                               <p class="text-xs font-light greyText">09:24 AM</p>
+                          </div>
+                        <p class="text-sm text-slate-500 truncate">Hola, buenos días. Sra. Sara</p>
+                      </div>
+                    </li>
+              </ul>
+                <hr>
+                <ul role="list" class="p-6 divide-y divide-slate-200 bg-greyInput">                   
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                      <img class="h-10 w-10 rounded-full" src="./thr.jpeg" alt="" />
+                      <div class="ml-3 overflow-hidden">
+                          <div class="flex justify-between">
+                              <p class="text-base font-medium text-slate-900 space-btw">+34 780 778 708</p>
+                               <p class="text-xs font-light greyText">09:10 AM</p>
+                          </div>
+                        <p class="text-sm text-slate-500 truncate">¿Podría ayudarme con mi duda?</p>
+                      </div>
+                    </li>
+              </ul>
+                <hr>
+                <ul role="list" class="p-6 divide-y divide-slate-200">                   
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                      <img class="h-10 w-10 rounded-full" src="./five.webp" alt="" />
+                      <div class="ml-3 overflow-hidden">
+                          <div class="flex justify-between">
+                              <p class="text-base font-medium text-slate-900 space-btw">+34 749 249 643</p>
+                               <p class="text-xs font-light greyText">08:52 AM</p>
+                          </div>
+                        <p class="text-sm text-slate-500 truncate">Muchas gracias por ayudarme!!</p>
+                      </div>
+                    </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="vl"></div>
+        <div class="flex-grow h-screen flex flex-col">
+            <div class="w-3/4 h-20 flex justify-between"> 
+                <ul role="list" class="p-6 divide-y divide-slate-200">                   
+                    <li class="flex py-4 first:pt-0 last:pb-0 ">
+                        <img class="h-10 w-10 rounded-full" src="./thr.jpeg" alt="" />
+                    <div class="ml-3 overflow-hidden">
+                      <div class="flex">
+                        <div>
+                             <p class="text-base font-medium text-slate-900">+34 655 964 669</p>
+                        </div>
+                      </div>
+                    <p class="text-sm text-slate-500 truncate">En línea </p>
+                    </div>
+                    </li>
+                </ul>
+        </div>
+        <hr>
+            <div class="flex-grow">
+                <div class="flex items-end w-3/6 bg-greyChat mx-8 mt-8 mb-3 rounded">
+                    <div class="p-3">
+                        <div class="text-sm	font-extralight	">¿Podrías ayudarme con mi duda?</div>
+                    </div>
+                </div>
+                <div class="flex items-end w-3/6 bg-greyChat mx-8 rounded">
+                    <div class="p-3">
+                        <div class="text-sm	font-extralight	">No logro cambiar mi contraseña de la plataforma, envié un correo para recuperarlo, pero no me llega nada, </div>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex items-end w-3/6 bg-blueHey mx-8 mt-8 mb-3 rounded">
+                        <div class="p-3">
+                            <div class="text-sm	font-extralight text-white">Buenos días, Sr. Carlos. ¿Revisó que su correo este escrito correctamente?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-end w-3/6 bg-greyChat mx-8 mt-8 mb-3 rounded">
+                    <div class="p-3">
+                        <div class="text-sm	font-extralight	">Si, pero no me llega nada en la bandeja de entrada.</div>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex items-end w-3/6 bg-blueHey mx-8 mt-8 mb-3 rounded">
+                        <div class="p-3">
+                            <div class="text-sm	font-extralight text-white">¿Revisó en la bandeja de correo no deseado? Pudo haberse filtrado ahí</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-end w-3/6 bg-greyChat mx-8 mt-8 mb-3 rounded">
+                    <div class="p-3">
+                        <div class="text-sm	font-extralight	">Oh si!, ahí está, muchas gracias!!!</div>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex items-end w-3/6 bg-blueHey mx-8 mt-8 mb-3 rounded">
+                        <div class="p-3">
+                            <div class="text-sm	font-extralight text-white">Un gusto ayudarle Sr. Carlos, que tenga buen día. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-70 h-14 flex">
+                <img class="px-2 py-4" src="./attachment.svg" alt="">
+                <input type="text" placeholder="Escribe un mensaje" class="flex-grow focus:outline-none">
+                <img class="px-2 py-4" src="./send.svg" alt="">
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="w-64">          
+            <div class="text-xl p-5 mt-3 font-semibold">
+                Información
+            </div>
+          <hr>
+          <div class="px-4 pt-4">
+            <div>
+                <p class="font-medium text-xs text-blueHey">ESTATUS DE LA CONVERSACIÓN</p> 
+            </div>
+          </div>
+          <div class="p-3.5 flex justify-center">
+                <img src="./cancel.svg" alt="">
+                <img src="./Correct.svg" alt="">
+                <img src="./more.svg" alt="">
+            </div>
+            <hr>
+            <div class="px-4 pt-4">
+                <div>
+                    <p class="font-medium text-xs text-blueHey">ACCIONES DE LA CONVERSACIÓN</p> 
+                </div>
+            </div>
+            <div class="p-4 flex justify-between">
+                <div class="flex justify-between">
+                    <img src="./block.svg" alt="">
+                <p class="text-greyText ml-2 text-center">Bloquear número</p>
+                </div>
+            </div>
+            <div class="p-4 flex justify-between">
+                <div class="flex justify-between">
+                    <img src="./volume_off.svg" alt="">
+                <p class="text-greyText ml-2 text-center">Silenciar conversación</p>
+                </div>
+                
+            </div>
+            <div class="p-4 flex justify-between">
+                <div class="flex justify-between">
+                    <img src="./error_outline.svg" alt="">
+                <p class="text-greyText ml-2 text-center">Reportar algún problema</p>
+                </div>
+            </div>
+            <hr>
+            <div class="px-4 pt-4">
+                <div>
+                    <p class="font-medium text-xs text-blueHey">ARCHIVOS EN LA CONVERSACIÓN</p> 
+                </div>
+            </div>
+            <div class="p-4 flex justify-between">
+                <div class="flex justify-between">
+                    <img class="h-6 w-6" src="./word.png" alt="" />
+                <p class="text-blueHey ml-2 text-center">TOTALES-DE-JULIO.doc</p>
+                </div>
+            </div>
+            <div class="p-4 flex justify-between">
+                <div class="flex justify-between">
+                    <img class="h-6 w-6" src="./excel.png" alt="" />
+                <p class="text-blueHey ml-2 text-center">TOTALES-DE-JUNIO.doc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
